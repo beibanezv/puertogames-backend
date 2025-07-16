@@ -11,10 +11,9 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                    .allowedOrigins("https://puertogames3-y5iq-hukc18ft3-beibanezvs-projects.vercel.app")
+                    .allowedOrigins("*")
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                    .allowedHeaders("*")
-                    .allowCredentials(true);
+                    .allowedHeaders("*");
             }
         };
     }
